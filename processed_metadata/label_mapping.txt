@@ -1,0 +1,6 @@
+LABEL MAPPING (fixed, applied deterministically before any split-specific step)
+'Normal'  -> 0
+'Attack'  -> 1
+'A ttack' -> 1   (37 malformed/typo raw label rows, confirmed and logged, NOT discarded)
+
+Counts: Normal=395,298, Attack(exact)=54,584, A_ttack(typo)=37, Total mapped to 1 (Attack)=54,621

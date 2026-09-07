@@ -1,0 +1,6 @@
+Rule_ID,Kind,N_Events_TRAIN_NORMAL,State_SMD,State_IQR_Overlap_Fraction,State_KS_Statistic,State_KS_Pvalue,Best_Event_Offset_Seconds,Best_Event_Pct_Expected_Direction,Best_Event_Median_Response,Spearman_Rho,Spearman_Pvalue,Kendall_Tau_Subsample,Residual_Formalization,Residual_Stability_CV,Best_Lag_Seconds,Best_Lag_Rho
+S5-R1,pump_sensor,1,5.816593930505326,0.0,0.9774695982519443,4.982706281143376e-147,,,,,,,,,,
+S5-R2,pump_sensor,1,3.484256404612514,0.0,0.9774695982519443,4.982706281143376e-147,,,,,,,,,,
+S5-R3,sensor_sensor,222343,,,,,,,,-0.8284074789495889,0.0,-0.6244184654012729,ratio (A/B),0.016215870329227458,0.0,-0.8284074789495889
+S5-R4,sensor_sensor,222343,,,,,,,,0.9961521199712695,0.0,0.9501288161263046,difference (A-B),0.017583497133866127,0.0,0.9961521199712695
+S5-R5,sensor_sensor,222343,,,,,,,,-0.7581790111467904,0.0,-0.5842091879321465,ratio (A/B),0.10250044191711802,-30.0,-0.7588025180736434

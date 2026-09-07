@@ -1,0 +1,19 @@
+{
+  "Model": "selected_lstm",
+  "Seed": 123,
+  "Threshold_Source": "results/repeated_seed/selected_lstm_seed123_metadata.json",
+  "Selected_Threshold": 0.9555404186248779,
+  "Latency_ms_per_seq": 0.06329234486603326,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.9547725621406339,
+  "Precision": 0.5895166780122533,
+  "Recall": 0.16324222431668237,
+  "F1": 0.2556834957189253,
+  "ROC_AUC": 0.530368680970163,
+  "MCC": 0.2941569526667445,
+  "FPR": 0.005679249547920434,
+  "TN": 105573,
+  "FP": 603,
+  "FN": 4439,
+  "TP": 866
+}

@@ -1,0 +1,6 @@
+Rule_ID,Kind,N_Events_TRAIN_NORMAL,State_SMD,State_IQR_Overlap_Fraction,State_KS_Statistic,Best_Event_Offset_Seconds,Best_Event_Pct_Expected_Direction,Best_Event_Median_Response,Best_Slope_Window_Seconds,Spearman_Rho,Spearman_Pvalue,Explained_Variance_Fraction,Coupling_Rate
+S1-R1,valve_flow,63,20.938528361400223,0.0,0.9967735672343344,0.0,100.0,1.048586,,,,,
+S1-R2,pump_slope,55825,-1.777474734014283,0.07029053039397953,,,,,120.0,,,,
+S1-R3,pump_slope,45,-2.589875046641732,0.0,,,,,300.0,,,,
+S1-R4,flow_level_slope,222283,,,,,,,60.0,0.4491946459507727,0.0,0.3696280181717414,
+S1-R5,actuator_coupling,125,,,,,,,,,,,0.0

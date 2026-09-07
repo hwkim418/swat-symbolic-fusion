@@ -1,0 +1,19 @@
+{
+  "Model": "full_lstm",
+  "Seed": 42,
+  "Threshold_Source": "results/main_experiment/full_lstm_metadata.json",
+  "Selected_Threshold": 0.9679598212242126,
+  "Latency_ms_per_seq": 0.07894847969208953,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.954054951067895,
+  "Precision": 0.7493188010899182,
+  "Recall": 0.051837888784165884,
+  "F1": 0.09696755994358251,
+  "ROC_AUC": 0.7405725858269435,
+  "MCC": 0.1894371007198556,
+  "FPR": 0.0008664858348402652,
+  "TN": 106084,
+  "FP": 92,
+  "FN": 5030,
+  "TP": 275
+}

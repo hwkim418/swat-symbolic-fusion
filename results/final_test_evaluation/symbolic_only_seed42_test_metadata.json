@@ -1,0 +1,19 @@
+{
+  "Model": "symbolic_only",
+  "Seed": 42,
+  "Threshold_Source": "results/main_experiment/symbolic_only_metadata.json",
+  "Selected_Threshold": 0.5451231002807617,
+  "Latency_ms_per_seq": 0.006316723968134202,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.8868147935522646,
+  "Precision": 0.11659851106217889,
+  "Recall": 0.20961357210179077,
+  "F1": 0.14984503436194582,
+  "ROC_AUC": 0.6108878447479518,
+  "MCC": 0.09915033613930917,
+  "FPR": 0.07934938215792646,
+  "TN": 97751,
+  "FP": 8425,
+  "FN": 4193,
+  "TP": 1112
+}

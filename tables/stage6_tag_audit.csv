@@ -1,0 +1,9 @@
+Tag,Split,Device_Type,Sensor_Or_Actuator,Dtype,N_Unique,N_Transitions,Constant_Or_Near_Constant,State_Values_And_Frequencies,Min,Max,Mean,Median,Std
+FIT601,TRAIN,Flow Indicator Transmitter,sensor,float64,2334,4533,False,,0.0,1.745363,0.015443721775866665,6.41e-05,0.15392557182183753
+FIT601,VALIDATION,Flow Indicator Transmitter,sensor,float64,767,1194,False,,0.0,1.80271,0.016244063031850584,0.0,0.15837854883376698
+P601,TRAIN,Pump,actuator,int64,1,0,True,1=270000(100.00%),,,,,
+P601,VALIDATION,Pump,actuator,int64,1,0,True,1=68319(100.00%),,,,,
+P602,TRAIN,Pump,actuator,int64,2,150,False,1=267717(99.15%); 2=2283(0.85%),,,,,
+P602,VALIDATION,Pump,actuator,int64,2,40,False,1=67707(99.10%); 2=612(0.90%),,,,,
+P603,TRAIN,Pump,actuator,int64,1,0,True,1=270000(100.00%),,,,,
+P603,VALIDATION,Pump,actuator,int64,1,0,True,1=68319(100.00%),,,,,

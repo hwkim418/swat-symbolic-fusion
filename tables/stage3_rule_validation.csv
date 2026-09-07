@@ -1,0 +1,7 @@
+Rule_ID,Kind,N_Events_TRAIN_NORMAL,State_SMD,State_IQR_Overlap_Fraction,State_KS_Statistic,Mode,Best_Event_Offset_Seconds,Best_Event_Pct_Expected_Direction,Best_Event_Median_Response,Spearman_Rho,Spearman_Pvalue,Residual_Formalization,Residual_Stability_CV,Best_Lag_Seconds,Flow_Conditioning_Helps,Best_Slope_Window_Seconds,Explained_Variance_Fraction,Coupling_Rate
+S3-R1,state_event,111,8.950319167913086,0.0,0.9848622546032887,direct_two_state,5.0,100.0,0.59098743,,,,,,,,,
+S3-R2,state_event,111,7.491421888357206,0.0,0.9732310584847484,direct_two_state,5.0,100.0,3.9938540999999996,,,,,,,,,
+S3-R3,sensor_sensor,222343,,,,,,,,0.1956081586931212,0.0,difference (A-B),0.39183015624473133,-30.0,False,,,
+S3-R4,flow_level_slope,222043,,,,,,,,-0.2315591382668272,0.0,,,,,300.0,0.07750584362941859,
+S3-R5,pump_slope,35399,-0.8529921872245434,0.7068613328022029,,,,,,,,,,,,300.0,,
+S3-R6,actuator_coupling,625,,,,,,,,,,,,,,,,0.064

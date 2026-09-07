@@ -1,0 +1,30 @@
+# Restricted / regenerable raw and processed data — never publish
+dataset/
+Dataset/
+processed/
+*.pt
+*.joblib
+*_threshold_sweep.csv
+
+# Python environment / bytecode
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets / local config
+.env
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Misc local artifacts
+*.log

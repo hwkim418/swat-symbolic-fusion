@@ -1,0 +1,54 @@
+PREPROCESSING SUMMARY — SWaT Candidate-1 Chronological Split
+Generated: 2026-08-11T16:34:23.645327
+Script: src/02_preprocess_data.py
+
+=== APPROVED SPLIT BOUNDARIES ===
+TRAIN : [2015-12-28 10:00:00, 2015-12-31 13:00:00) exclusive upper bound
+VAL   : [2015-12-31 13:00:00, 2016-01-01 08:00:00) exclusive upper bound
+TEST  : [2016-01-01 08:00:00, 2016-01-02 14:59:59] inclusive
+
+=== SPLIT STATISTICS ===
+TRAIN: 2015-12-28 10:00:00 -> 2015-12-31 12:59:59 | rows=270,000 | normal=222,343 | attack=47,657 | attack%=17.6507 | complete attack intervals=22
+VAL  : 2015-12-31 13:00:00 -> 2016-01-01 07:59:59 | rows=68,319 | normal=66,660 | attack=1,659 | attack%=2.4283 | complete attack intervals=3
+TEST : 2016-01-01 08:00:00 -> 2016-01-02 14:59:59 | rows=111,600 | normal=106,295 | attack=5,305 | attack%=4.7536 | complete attack intervals=10
+
+Total rows processed: 449,919 (train+val+test, fully accounted)
+Predictive feature count: 51 (51 physical process variables)
+
+=== CORRECTIONS APPLIED (raw-format, deterministic) ===
+  - Attack CSV UTF-8 BOM present at byte offset 0: True. Loaded with encoding='utf-8-sig' so the BOM is consumed as an encoding artifact rather than becoming part of the first column name.
+  - Stripped leading/trailing whitespace from 8 column name(s): ["' Timestamp' -> 'Timestamp'", "' MV101' -> 'MV101'", "' AIT201' -> 'AIT201'", "' MV201' -> 'MV201'", "' P201' -> 'P201'", "' P202' -> 'P202'", "' P204' -> 'P204'", "' MV303' -> 'MV303'"]
+  - Cross-checked stripped Attack-file physical variable names against the Normal-file header (structural check only, no Normal-file data rows read): identical order and names = True.
+  - Duplicate column names after whitespace normalization: 0 (expected 0).
+  - Parsed raw timestamp strings (format 'DD/MM/YYYY H:MM:SS AM/PM', leading whitespace stripped for parsing only) into datetime64. Parse failures: 0 (expected 0).
+
+=== LABEL NORMALIZATION ===
+Fixed mapping: 'Normal'->0, 'Attack'->1, 'A ttack'->1 (37 malformed rows, not discarded, confirmed).
+
+=== SCALING ===
+StandardScaler fit on TRAIN physical features ONLY (shape (270000, 51)); the identical fitted scaler was used to transform TRAIN, VALIDATION, and TEST. Saved to processed/scaler.joblib.
+Constant (zero-variance) TRAIN features: ['P202', 'P301', 'P401', 'P404', 'P502', 'P601', 'P603'] (7 of 51). These were NOT removed (feature selection is out of scope for this step); StandardScaler maps them to a constant 0.0 in every split per its documented zero-variance handling. They remain present as columns of zeros and will contribute no variance unless removed or handled during the later Random Forest / feature-ranking stage.
+
+=== VALIDATION CHECKS ===
+  [PASS] 51_features_per_split
+  [PASS] feature_ordering_identical
+  [PASS] no_nan
+  [PASS] no_inf
+  [PASS] labels_binary_only
+  [PASS] timestamps_sorted
+  [PASS] no_timestamp_overlap
+  [PASS] test_not_used_in_fit
+  [PASS] scaler_from_train_only
+  [PASS] raw_attack_file_unchanged
+  [PASS] raw_normal_file_unchanged_size
+
+=== REPRODUCIBILITY ===
+Python : 3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]
+numpy  : 2.5.2
+pandas : 3.0.5
+scikit-learn : 1.9.0
+joblib : 1.5.3
+OS     : Windows 11 (10.0.26200)
+Execution timestamp : 2026-08-11T16:34:23.645327
+Input file (Attack) : SWaT_Dataset_Attack_v0.csv (133,454,857 bytes, SHA-256 865911a324ee53479cf58ab8e4f6509982e33e271a8bd06952f29202c99d8be5)
+Raw source files unchanged after run: attack=True, normal_size_unchanged=True

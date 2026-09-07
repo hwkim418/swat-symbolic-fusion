@@ -1,0 +1,33 @@
+Feature_Name,Kind,Split,N_Rows,N_Undefined_Before_Fill,Pct_Undefined_Before_Fill,N_Defined_Before_Fill,Pct_Defined_Before_Fill,Reason_If_Undefined
+S1-R1_state_score,valve3,TRAIN,270000,1323,0.49,268677,99.51,"transitional state (neither the empirically-identified LOW nor HIGH extreme) excluded, scored NaN"
+S1-R1_state_score,valve3,VALIDATION,68319,300,0.4391,68019,99.5609,"transitional state (neither the empirically-identified LOW nor HIGH extreme) excluded, scored NaN"
+S1-R2_slope_score,pump_slope,TRAIN,270000,120,0.0444,269880,99.9556,rolling-window edge (first `window` rows of this split cannot look back) OR pump state outside the 2 defined states
+S1-R2_slope_score,pump_slope,VALIDATION,68319,120,0.1756,68199,99.8244,rolling-window edge (first `window` rows of this split cannot look back) OR pump state outside the 2 defined states
+S1-R3_slope_score,pump_slope,TRAIN,270000,300,0.1111,269700,99.8889,rolling-window edge (first `window` rows of this split cannot look back) OR pump state outside the 2 defined states
+S1-R3_slope_score,pump_slope,VALIDATION,68319,300,0.4391,68019,99.5609,rolling-window edge (first `window` rows of this split cannot look back) OR pump state outside the 2 defined states
+S1-R4_slope_score,uncond_slope,TRAIN,270000,60,0.0222,269940,99.9778,rolling-window edge (first `window` rows of this split cannot look back)
+S1-R4_slope_score,uncond_slope,VALIDATION,68319,60,0.0878,68259,99.9122,rolling-window edge (first `window` rows of this split cannot look back)
+S2_R1_score,valve3,TRAIN,270000,985,0.3648,269015,99.6352,"transitional state (neither the empirically-identified LOW nor HIGH extreme) excluded, scored NaN"
+S2_R1_score,valve3,VALIDATION,68319,281,0.4113,68038,99.5887,"transitional state (neither the empirically-identified LOW nor HIGH extreme) excluded, scored NaN"
+S2_R3B_state_mismatch,mismatch,TRAIN,270000,0,0.0,270000,100.0,"always defined (binary state comparison, never NaN)"
+S2_R3B_state_mismatch,mismatch,VALIDATION,68319,0,0.0,68319,100.0,"always defined (binary state comparison, never NaN)"
+S3-R1_state_score,state2,TRAIN,270000,0,0.0,270000,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S3-R1_state_score,state2,VALIDATION,68319,0,0.0,68319,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S3-R2_state_score,state2,TRAIN,270000,0,0.0,270000,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S3-R2_state_score,state2,VALIDATION,68319,0,0.0,68319,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S3-R4_slope_score,uncond_slope,TRAIN,270000,300,0.1111,269700,99.8889,rolling-window edge (first `window` rows of this split cannot look back)
+S3-R4_slope_score,uncond_slope,VALIDATION,68319,300,0.4391,68019,99.5609,rolling-window edge (first `window` rows of this split cannot look back)
+S4-R2_state_score,state2,TRAIN,270000,0,0.0,270000,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S4-R2_state_score,state2,VALIDATION,68319,0,0.0,68319,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S5-R1_state_score,state2,TRAIN,270000,0,0.0,270000,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S5-R1_state_score,state2,VALIDATION,68319,0,0.0,68319,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S5-R2_state_score,state2,TRAIN,270000,0,0.0,270000,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S5-R2_state_score,state2,VALIDATION,68319,0,0.0,68319,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S5-R3_residual_score,ratio,TRAIN,270000,66,0.0244,269934,99.9756,denominator sensor reads exactly 0 at that timestep (division undefined)
+S5-R3_residual_score,ratio,VALIDATION,68319,0,0.0,68319,100.0,denominator sensor reads exactly 0 at that timestep (division undefined)
+S5-R4_residual_score,diff,TRAIN,270000,0,0.0,270000,100.0,always defined (simple subtraction of two continuous sensors)
+S5-R4_residual_score,diff,VALIDATION,68319,0,0.0,68319,100.0,always defined (simple subtraction of two continuous sensors)
+S5-R5_residual_score,ratio,TRAIN,270000,0,0.0,270000,100.0,denominator sensor reads exactly 0 at that timestep (division undefined)
+S5-R5_residual_score,ratio,VALIDATION,68319,0,0.0,68319,100.0,denominator sensor reads exactly 0 at that timestep (division undefined)
+S6-R1_state_score,state2,TRAIN,270000,0,0.0,270000,100.0,always defined for a true 2-state actuator (no reference state excluded)
+S6-R1_state_score,state2,VALIDATION,68319,0,0.0,68319,100.0,always defined for a true 2-state actuator (no reference state excluded)

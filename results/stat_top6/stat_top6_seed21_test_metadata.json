@@ -1,0 +1,21 @@
+{
+  "model_name": "stat_top6",
+  "seed": 21,
+  "threshold_source": "results/stat_top6/stat_top6_seed21_metadata.json",
+  "selected_threshold": 0.9928067922592163,
+  "latency_ms_per_sequence": 0.06990322698707195,
+  "n_test_sequences": 111481,
+  "metrics": {
+    "Accuracy": 0.9540639212063042,
+    "Precision": 0.7527472527472527,
+    "Recall": 0.05164938737040528,
+    "F1": 0.0966660786734874,
+    "ROC_AUC": 0.5704225594662876,
+    "MCC": 0.18958042846389164,
+    "FPR": 0.0008476491862567812,
+    "TN": 106086,
+    "FP": 90,
+    "FN": 5031,
+    "TP": 274
+  }
+}

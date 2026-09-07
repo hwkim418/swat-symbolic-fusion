@@ -1,0 +1,19 @@
+{
+  "Model": "neurosymbolic_core",
+  "Seed": 7,
+  "Threshold_Source": "results/repeated_seed/neurosymbolic_core_seed7_metadata.json",
+  "Selected_Threshold": 0.9915481209754944,
+  "Latency_ms_per_seq": 0.06629796035736535,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.9549429947704093,
+  "Precision": 0.8105726872246696,
+  "Recall": 0.06936852026390197,
+  "F1": 0.12779996527174856,
+  "ROC_AUC": 0.6793713576561514,
+  "MCC": 0.22917921802976207,
+  "FPR": 0.0008099758890898132,
+  "TN": 106090,
+  "FP": 86,
+  "FN": 4937,
+  "TP": 368
+}

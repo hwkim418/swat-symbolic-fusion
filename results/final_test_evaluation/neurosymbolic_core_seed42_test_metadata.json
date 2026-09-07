@@ -1,0 +1,19 @@
+{
+  "Model": "neurosymbolic_core",
+  "Seed": 42,
+  "Threshold_Source": "results/main_experiment/neurosymbolic_core_metadata.json",
+  "Selected_Threshold": 0.9727046489715576,
+  "Latency_ms_per_seq": 0.06669431592705788,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.9563333662238408,
+  "Precision": 0.7182817182817183,
+  "Recall": 0.1355325164938737,
+  "F1": 0.22803679035838884,
+  "ROC_AUC": 0.6067530423761744,
+  "MCC": 0.2998785091383669,
+  "FPR": 0.0026559674502712478,
+  "TN": 105894,
+  "FP": 282,
+  "FN": 4586,
+  "TP": 719
+}

@@ -1,0 +1,19 @@
+{
+  "Model": "full_lstm",
+  "Seed": 7,
+  "Threshold_Source": "results/repeated_seed/full_lstm_seed7_metadata.json",
+  "Selected_Threshold": 0.9985994696617126,
+  "Latency_ms_per_seq": 0.08160512349114833,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.9524134157390048,
+  "Precision": 0.0,
+  "Recall": 0.0,
+  "F1": 0.0,
+  "ROC_AUC": 0.528401749603312,
+  "MCC": 0.0,
+  "FPR": 0.0,
+  "TN": 106176,
+  "FP": 0,
+  "FN": 5305,
+  "TP": 0
+}

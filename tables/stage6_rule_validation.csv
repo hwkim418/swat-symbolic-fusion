@@ -1,0 +1,2 @@
+Rule_ID,Kind,N_Events_TRAIN_NORMAL,State_SMD,State_IQR_Overlap_Fraction,State_KS_Statistic,Mode,Thin_Minority_Reference,Best_Event_Offset_Seconds,Best_Event_Pct_Expected_Direction,Best_Event_Median_Response
+S6-R1,state_event,64,3.0953243564550053,0.0,0.9946906751010814,direct_two_state,False,0,100.0,0.0261173013

@@ -1,0 +1,19 @@
+{
+  "Model": "neurosymbolic_extended",
+  "Seed": 21,
+  "Threshold_Source": "results/repeated_seed/neurosymbolic_extended_seed21_metadata.json",
+  "Selected_Threshold": 0.9986226558685303,
+  "Latency_ms_per_seq": 0.06787248194904366,
+  "N_Test_Sequences": 111481,
+  "Accuracy": 0.9524941469846879,
+  "Precision": 0.5555555555555556,
+  "Recall": 0.008482563619227144,
+  "F1": 0.01670998886000743,
+  "ROC_AUC": 0.6310016092285589,
+  "MCC": 0.06434015167190413,
+  "FPR": 0.0003390596745027125,
+  "TN": 106140,
+  "FP": 36,
+  "FN": 5260,
+  "TP": 45
+}

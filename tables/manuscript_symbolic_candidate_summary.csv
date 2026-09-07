@@ -1,0 +1,7 @@
+Stage,Candidate count,Stage-level retained,Limited,Rejected,Final CORE,Final CAVEAT,Main rule category,Main limitation
+Stage 1,5,4,0,1,3,1,rolling flow<->level (mass-balance),"Transitional-state rows are excluded from evaluability, mirroring MV201's treatment in Stage 2."
+Stage 2,4,2,2,0,2,0,chemical-dosing response + bidirectional pump coupling (baseline),"Requires detecting the full 3-state sequence, not a simple 2-state transition; only 64 usable NORMAL TRAIN sequences; transitional-state dwell time varies (median 7.0s), so the true 'moment of opening' has some inherent jitter; VALIDATION attack-period coverage for this exact sequence has not yet been confirmed nonzero (see Part 4)."
+Stage 3,6,3,0,3,0,3,actuator->flow/differential-pressure + rolling flow<->level,Event-based companion evidence available.
+Stage 4,6,1,0,5,0,1,actuator->analyzer response,Too few TRAIN transitions (1) for a robust event-based companion check.
+Stage 5,5,5,0,0,1,4,sensor-sensor conservation/consistency,Pump had too few TRAIN transitions (1 usable) for a robust event-based companion check; state-based comparison used instead.
+Stage 6,1,1,0,0,0,1,pump->flow (6th independent confirmation of an existing category),event-based companion evidence available; Stage 6 has relatively low attack-associated activity (~28% per script 10); see ATTACK-period coverage separately -- this does not reduce overall NORMAL evaluability
